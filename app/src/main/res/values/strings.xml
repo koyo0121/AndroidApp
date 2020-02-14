@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">Book_Library</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="app_name">本管理</string>
+    <string name="tab_text_1">読んだ本</string>
+    <string name="tab_text_2">読んでいる本</string>
+    <string name="tab_text_3">積読本</string>
+    <string name="tab_text_4">読みたい本</string>
 </resources>
