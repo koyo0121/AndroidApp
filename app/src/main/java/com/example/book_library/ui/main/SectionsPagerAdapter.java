@@ -9,6 +9,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.book_library.R;
+import com.example.book_library.ReadedBook;
+import com.example.book_library.ReadingBook;
+import com.example.book_library.TundokuBook;
+import com.example.book_library.WantToReadBook;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -29,7 +33,23 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         // getItem is called to instantiate the fragment for the given page.
         // Return a PlaceholderFragment (defined as a static inner class below).
-        return PlaceholderFragment.newInstance(position + 1);
+        //return PlaceholderFragment.newInstance(position + 1);
+        Fragment fragment = null;
+        switch (position){
+            case 0:
+                fragment = new ReadedBook();
+                break;
+            case 1:
+                fragment = new ReadingBook();
+                break;
+            case 2:
+                fragment = new TundokuBook();
+                break;
+            case 3:
+                fragment = new WantToReadBook();
+                break;
+        }
+        return  fragment;
     }
 
     @Nullable
