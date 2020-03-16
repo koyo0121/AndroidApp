@@ -17,6 +17,8 @@ public class ReadedBook extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
+        DatabaseHelper helper = new DatabaseHelper(getActivity());
+
         // 表示する画面IDを設定
         View view = inflater.inflate(R.layout.fragment_readed_book,container,false);
 
