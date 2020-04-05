@@ -26,7 +26,7 @@ public class ReadingBook extends Fragment {
 
         for(int i = 1; i< 42; i++){
 
-            list.add("TEST"+i);
+            list.add("読んでいる本"+i);
         }
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
