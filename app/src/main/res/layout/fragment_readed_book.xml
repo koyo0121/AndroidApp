@@ -6,10 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".ReadedBook">
 
-    <GridView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/gridView"
-        android:numColumns="auto_fit"
-        android:gravity="center"/>
+        android:orientation="vertical"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:isScrollContainer="false"
+            android:numColumns="auto_fit"
+            android:gravity="center">
+        </GridView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
 </FrameLayout>
